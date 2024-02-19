@@ -1,0 +1,24 @@
+[{
+"marca": "Bandai",
+"nombre" : "Hulk",
+"precio" : "40",
+"stock" : "20"
+
+}, {
+"marca": "Bandai",
+"nombre" : "Gamora",
+"precio" : "30",
+"stock" : "25"
+
+},{
+"marca": "Bandai",
+"nombre" : "Thor edicion especial",
+"precio" : "100",
+"stock" : "5"
+
+},{
+"marca": "Bandai",
+"nombre" : "Vegeta SSJ",
+"precio" : "200",
+"stock" : "3"
+}]

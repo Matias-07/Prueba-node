@@ -1,0 +1,37 @@
+ [{
+    "id" : 1,
+"marca" : "Olmo",
+"modelo" : "Regal",
+"rodado" : 29,
+"anio" : 2022,
+"color": "roja",
+"peso" : 16,
+"tipo" : "Montañera",
+"precio" : 120000,
+"vendida" : "si"
+}, 
+
+{"id" : 2,
+"marca" : "TopMega",
+"modelo" : "Techno",
+"rodado" : 15,
+"anio" : 2024,
+"color": "amarilla",
+"peso" : 13,
+"tipo" : "Triatlón",
+"precio" : 200000,
+"vendida" : "no"}, 
+
+
+{"id" : 3,
+"marca" : "Shifter",
+"modelo" : "Sunshine",
+"rodado" : 16,
+"anio" : 2023,
+"color": "azul",
+"peso" : 17,
+"tipo" : "Paseo",
+"precio" : 100000,
+"vendida" : "no"}
+
+]
