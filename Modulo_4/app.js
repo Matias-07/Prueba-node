@@ -24,5 +24,5 @@ app.get('/Hola-Mundo', (req,res) => {
     let htmlPath = path.resolve(__dirname, './views/index.html')
      //res.sendFile('./views/index.html') no!! 
     res.sendFile(htmlPath)
-}); 
+});  
 
