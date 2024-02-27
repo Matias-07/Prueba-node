@@ -1,34 +1,34 @@
-let perfil = "administrador"; 
+let perfil = "administrador";
 
-switch (perfil){
+switch (perfil) {
     case "administrador":
         console.log("Usted tiene todos los privilegios de uso del sistema");
         break;
-    case " ": 
+    case " ":
         console.log("Debe especificar el perfil del usuario");
         break;
-    case "asistente": 
+    case "asistente":
         console.log("Usted sólo tiene permisos de consultar datos");
         break
-    default: 
+    default:
         console.log("Debe especificar un perfil válido");
 }
 
 let pagoMes = 10000;
 
-let consumokwh = 335; 
+let consumokwh = 335;
 
-if (consumokwh >= 300 ) {
-    console.log("Debido a que supero los 300 KWH consumidos en el hogar se le cobrara un 20% mas, el total de su compra ed de:" + " " + (pagoMes*(20/100)+pagoMes));
+if (consumokwh >= 300) {
+    console.log("Debido a que supero los 300 KWH consumidos en el hogar se le cobrara un 20% mas, el total de su compra ed de:" + " " + (pagoMes * (20 / 100) + pagoMes));
 } else {
-    console.log("Debido a que usted consume menos de 300 KWH en su hogar por mes no se le cobrara ningun aumento"); 
+    console.log("Debido a que usted consume menos de 300 KWH en su hogar por mes no se le cobrara ningun aumento");
 }
 
-let aumento = consumokwh >= 300? console.log("Debido a que supero los 300 KWH consumidos en el hogar se le cobrara un 20% mas, el total de su compra ed de:" + " " + (pagoMes*(20/100)+pagoMes)): console.log("Debido a que usted consume menos de 300 KWH en su hogar por mes no se le cobrara ningun aumento"); 
+let aumento = consumokwh >= 300 ? console.log("Debido a que supero los 300 KWH consumidos en el hogar se le cobrara un 20% mas, el total de su compra ed de:" + " " + (pagoMes * (20 / 100) + pagoMes)) : console.log("Debido a que usted consume menos de 300 KWH en su hogar por mes no se le cobrara ningun aumento");
 
 let Palabra = "perro"
 
-switch (Palabra){
+switch (Palabra) {
     case "perro":
         console.log("dog");
         break;
@@ -41,7 +41,7 @@ switch (Palabra){
     case "mesa":
         console.log("table");
         break;
-    case "gato":  
+    case "gato":
         console.log("cat");
         break;
     default:

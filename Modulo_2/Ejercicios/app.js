@@ -12,7 +12,7 @@ console.log(PeliculasString); }
 let peliculasString = PeliculasFav.map(pelicula => JSON.stringify(pelicula));
 
 // Utilizando el método .join() para unir las cadenas de películas con una coma como separador
-console.log(peliculasString.join(' , ')); */ 
+console.log(peliculasString.join(' , ')); */
 
 /* for (let i = 0; i < PeliculasFav.length; i++) {
     console.log(PeliculasFav[i]);
@@ -34,63 +34,64 @@ por lo que deberíamos utilizar el método filter.*/
 
 
 let dhBici = {
-bicicletas: datosBici,
+    bicicletas: datosBici,
 
-BuscarBici: function (id){
-    let bicicleta = this.bicicletas.filter(function(bicicletas){
-        return bicicletas.id == id 
-    })
-if (bicicleta.length > 0) {
-    return bicicleta[0]
-} else {
-    return null
-}}, 
- 
-/*Crear una funcionalidad de (venderBici) que reciba el (id). En caso de
-encontrar la bicicleta, debe asignarle el estado de vendida (si) y retornar
-todos los datos de la bicicleta. En el caso de no encontrar la bicicleta,
-debe retornar al usuario: “Bicicleta no encontrada”. Puedes aprovechar
-la función (buscarBici)*/ 
+    BuscarBici: function (id) {
+        let bicicleta = this.bicicletas.filter(function (bicicletas) {
+            return bicicletas.id == id
+        })
+        if (bicicleta.length > 0) {
+            return bicicleta[0]
+        } else {
+            return null
+        }
+    },
 
-venderBici: function (id){
-    let BiciBuscada = this.BuscarBici(id) 
-    if (this.BuscarBici != null ) {
-        BiciBuscada.vendida = "si"; 
-        return BiciBuscada
-    } else {
-        return ("bisicleta no encontrda")
-    }
+    /*Crear una funcionalidad de (venderBici) que reciba el (id). En caso de
+    encontrar la bicicleta, debe asignarle el estado de vendida (si) y retornar
+    todos los datos de la bicicleta. En el caso de no encontrar la bicicleta,
+    debe retornar al usuario: “Bicicleta no encontrada”. Puedes aprovechar
+    la función (buscarBici)*/
 
-},
-
-/*Crear la funcionalidad (biciParaLaVenta). Tendrá la responsabilidad de
-devolver todas aquellas bicicletas que aún no estén vendidas. Recuerda
-que estamos optimizando nuestro código, por lo que deberíamos utilizar
-el método filter.*/
-
-biciParaLaVenta: function(){ 
-    let NoVendidas = this.bicicletas.filter(function(bicicleta){
-        return bicicleta.vendida == "no"; 
-    }); 
-    return NoVendidas   
+    venderBici: function (id) {
+        let BiciBuscada = this.BuscarBici(id)
+        if (this.BuscarBici != null) {
+            BiciBuscada.vendida = "si";
+            return BiciBuscada
+        } else {
+            return ("bisicleta no encontrda")
+        }
 
     },
 
-/*Finalmente  Tenemos que desarrollar una funcionalidad
-(totalDeVentas) que retorne la suma del valor de todas las ventas
-realizadas. Se recomienda utilizar la función reduce.*/ 
+    /*Crear la funcionalidad (biciParaLaVenta). Tendrá la responsabilidad de
+    devolver todas aquellas bicicletas que aún no estén vendidas. Recuerda
+    que estamos optimizando nuestro código, por lo que deberíamos utilizar
+    el método filter.*/
 
-TotalDeVentas: function(){
-let bicicletasVendidas = this.bicicletas.filter(function(bicicleta){
-    return bicicleta.vendida == "si"
+    biciParaLaVenta: function () {
+        let NoVendidas = this.bicicletas.filter(function (bicicleta) {
+            return bicicleta.vendida == "no";
+        });
+        return NoVendidas
 
-})
+    },
 
-let VentaTotal = bicicletasVendidas.reduce(function(total, actual){
-    return total + actual.precio
-})
+    /*Finalmente  Tenemos que desarrollar una funcionalidad
+    (totalDeVentas) que retorne la suma del valor de todas las ventas
+    realizadas. Se recomienda utilizar la función reduce.*/
 
-return VentaTotal
+    TotalDeVentas: function () {
+        let bicicletasVendidas = this.bicicletas.filter(function (bicicleta) {
+            return bicicleta.vendida == "si"
+
+        })
+
+        let VentaTotal = bicicletasVendidas.reduce(function (total, actual) {
+            return total + actual.precio
+        })
+
+        return VentaTotal
 
     }
 

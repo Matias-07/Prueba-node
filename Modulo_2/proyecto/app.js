@@ -10,8 +10,4 @@ let heroes = require('./superHeroesModulos.js');
 // para instalar modulos ----------> npm install nombre_paquete
 // comando interesante npm init -y
 
-const express = require('express'); 
-
-const app = express();
-
-app.listen(3000, () => console.log('todo bien')); 
+ 
